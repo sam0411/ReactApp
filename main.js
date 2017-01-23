@@ -17,6 +17,7 @@ import App_Event from './App_Event.jsx';
 import App_Eventparent from './App_Eventparent.jsx';
 import App_Refs from './App_Refs.jsx';
 import App_Keys from './App_Keys.jsx';
+import App_Animation from './App_Animation.jsx';
 
 ReactDOM.render(<App_Render />, document.getElementById('app_render'));
 
@@ -52,3 +53,5 @@ ReactDOM.render(<App_Eventparent />, document.getElementById('app_eventparent'))
 ReactDOM.render(<App_Refs />, document.getElementById('app_refs'));
 
 ReactDOM.render(<App_Keys />, document.getElementById('app_keys'));
+
+ReactDOM.render(<App_Animation />, document.getElementById('app_animation'));
