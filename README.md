@@ -10,6 +10,21 @@ npm init
 
 npm install webpack --save
 
+## Node Webpack React
+
+* npm init
+
+* npm install webpack -g
+
+* npm install webpack --save-dev
+
+* npm i webpack-cli -g
+
+* npm install webpack-cli -D
+
+
+
+
 npm install webpack-dev-server --save
 
 npm start
