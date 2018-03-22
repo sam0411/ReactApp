@@ -1,15 +1,3 @@
-## React
-
-npm install -g babel
-
-npm install -g babel-cli
-
-mkdir reactApp
-
-npm init
-
-npm install webpack --save
-
 ## Node Webpack React
 
 * npm init
@@ -21,6 +9,19 @@ npm install webpack --save
 * npm i webpack-cli -g
 
 * npm install webpack-cli -D
+
+
+npm install -g babel
+
+npm install -g babel-cli
+
+mkdir reactApp
+
+npm init
+
+npm install webpack --save
+
+
 
 
 
