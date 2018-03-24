@@ -15,16 +15,6 @@ npm install -g babel
 
 npm install -g babel-cli
 
-mkdir reactApp
-
-npm init
-
-npm install webpack --save
-
-
-
-
-
 
 npm install webpack-dev-server --save
 
@@ -34,7 +24,7 @@ npm install react --save
 
 npm install react-dom --save
 
-npm install --save react-redux
+npm install react-redux --save
 
 
 npm install babel-core
