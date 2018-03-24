@@ -10,6 +10,8 @@ npm i webpack-cli -g
 
 npm install webpack-cli -D
 
+npm install webpack-dev-server --save-dev
+
 
 
 npm install -g babel
@@ -17,7 +19,7 @@ npm install -g babel
 npm install -g babel-cli
 
 
-npm install webpack-dev-server --save
+
 
 npm start
 
