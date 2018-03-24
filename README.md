@@ -1,18 +1,12 @@
 ## Node Webpack React
 
-* npm init
-
-* npm install webpack -g
-
-* npm install webpack --save-dev
-
-* npm i webpack-cli -g
-
-* npm install webpack-cli -D
-
+npm init
+npm install webpack -g
+npm install webpack --save-dev
+npm i webpack-cli -g
+npm install webpack-cli -D
 
 npm install -g babel
-
 npm install -g babel-cli
 
 
