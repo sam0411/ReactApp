@@ -37,11 +37,13 @@ npm install react-dom --save-dev
 
 npm install react-redux --save-dev
 
+npm install babel-preset-es2015 --save-dev
+
 
 npm install style-loader --save-dev 
 
 npm install css-loader --save-dev
 
 
-npm install babel-preset-es2015
+
 npm install react-addons-css-transition-group
