@@ -1,6 +1,5 @@
 const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const CleanWebpackPlugin = require("clean-webpack-plugin");
 
 //“__dirname”是node.js中的一个全局变量，它指向当前执行脚本所在的目录。
@@ -72,7 +71,6 @@ module.exports = {
         }),
         //new webpack.optimize.OccurrenceOrderPlugin(),
         //new webpack.optimize.UglifyJsPlugin(),
-        //new ExtractTextPlugin("style.css")
         new CleanWebpackPlugin('build/*.*', {
             root: __dirname,
             verbose: true,

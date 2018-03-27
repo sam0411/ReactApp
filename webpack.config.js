@@ -42,7 +42,7 @@ module.exports = {
                 exclude: /node_modules/
             },
             {
-              test: /\.css$/,
+              test: /(\.css|\.scss)$/,
               use: [
                   {
                     loader: "style-loader"
@@ -56,15 +56,19 @@ module.exports = {
                   },
                   {
                     loader: "postcss-loader"
+                  }, 
+                  {
+                    loader: "sass-loader" // 将 Sass 编译成 CSS
                   }
               ]
-          }
+            }
         ]
       },
 
     plugins: [
         new webpack.BannerPlugin('版权所有，翻版必究'),
         new HtmlWebpackPlugin({
+            title: "Webpack",
             template: __dirname + "/app/index.tmpl.html"//new 一个这个插件的实例，并传入相关的参数
         }),
         new webpack.HotModuleReplacementPlugin()//热加载插件

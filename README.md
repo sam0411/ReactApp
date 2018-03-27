@@ -52,4 +52,15 @@ npm install extract-text-webpack-plugin --save-dev
 npm install clean-webpack-plugin --save-dev  
 
 
+<font color=#0099ff>SCSS handling</font>  
+npm install sass-loader --save-dev  
+npm install node-sass --save-dev  
+
+
+<font color=#0099ff>Extract text from a bundle, or bundles, into a separate file</font>  
+npm install extract-text-webpack-plugin --save-dev  
+
+
+
+
 npm install react-addons-css-transition-group
