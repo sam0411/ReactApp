@@ -61,6 +61,8 @@ npm install node-sass --save-dev
 npm install extract-text-webpack-plugin --save-dev  
 
 
-
+<font color=#0099ff>处理文件。诸如图片，字体等等，不过有个神奇的地方它可以根据你的需求将一些图片自动转成base64编码的，为你减轻很多的网络请求</font>  
+npm install url-loader --save-dev  
+npm install file-loader --save-dev  
 
 npm install react-addons-css-transition-group
