@@ -1,6 +1,10 @@
 const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
+//判断当前运行环境是开发模式还是生产模式
+const nodeEnv = process.env.NODE_ENV || 'development'
+const isPro = nodeEnv === 'production'
+
 //“__dirname”是node.js中的一个全局变量，它指向当前执行脚本所在的目录。
 
 module.exports = {
@@ -80,6 +84,12 @@ module.exports = {
             title: "Webpack",
             template: __dirname + "/app/index.tmpl.html"//new 一个这个插件的实例，并传入相关的参数
         }),
-        new webpack.HotModuleReplacementPlugin()//热加载插件
+        new webpack.HotModuleReplacementPlugin(),//热加载插件
+        new webpack.DefinePlugin({
+          // 定义全局变量
+          'process.env':{
+              'NODE_ENV': JSON.stringify(nodeEnv)
+          }
+      })
     ]
 }
