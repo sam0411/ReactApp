@@ -9,6 +9,8 @@ const isPro = nodeEnv === 'production'
 
 module.exports = {
 
+      mode: nodeEnv,
+
       //devtool -> source map
       //source-map,	在一个单独的文件中产生一个完整且功能完全的文件。这个文件具有最好的source map，但是它会减慢打包速度；
       //cheap-module-source-map,	在一个单独的文件中生成一个不带列映射的map，不带列映射提高了打包速度，但是也使得浏览器开发者工具只能对应到具体的行，不能对应到具体的列（符号），会对调试造成不便；
