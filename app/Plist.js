@@ -1,6 +1,6 @@
 import React, {component} from 'react'
 
-import PlistItem from './Plistitem';
+import PlistItem from './PlistItem';
 
 class Plist extends React.Component {
 
@@ -13,7 +13,7 @@ class Plist extends React.Component {
 
         //object id property, map index property
         const listItems = numbers.map((number, index) =>
-            <PlistItem id={index} value={number} />
+            <PlistItem key={index} value={number} index={index} />
         );
 
         return(

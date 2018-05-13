@@ -4,6 +4,8 @@ import React, {Component} from 'react';
 import Toggle from './Toggle';
 import Popper from './Popper';
 import Plist from './Plist';
+import Pclock from './Pclock';
+import NameForm from './NameForm';
 
 import config from './config.json';
 
@@ -13,24 +15,6 @@ class Greeter extends Component{
 
   constructor(props) {
     super(props);
-    this.state = {date: new Date()};
-  }
-  
-  componentDidMount() {
-    this.timerID = setInterval(
-      () => this.tick(),
-      1000
-    );
-  }
-
-  componentWillUnmount() {
-    clearInterval(this.timerID);
-  }
-
-  tick() {
-    this.setState({
-      date: new Date()
-    });
   }
 
   render() {
@@ -51,7 +35,7 @@ class Greeter extends Component{
         {greeting}
         <br />
 
-        <h2>It is {this.state.date.toLocaleTimeString()}.</h2>
+        <Pclock />
         <br />
 
         <Toggle />
@@ -62,6 +46,10 @@ class Greeter extends Component{
 
         <Plist numbers={numbers} />
         <br />
+
+        <NameForm />
+        <br />
+        
       </div>
     );
   }

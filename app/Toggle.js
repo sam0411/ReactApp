@@ -21,9 +21,11 @@ class Toggle extends Component {
     render() {
       return (
           //<button onClick={(e) => this.handleClick(e)}>
-        <button onClick={this.handleClick}>
-          {this.state.isToggleOn ? 'ON' : 'OFF'}
-        </button>
+        <div>
+          <button onClick={this.handleClick}>
+            {this.state.isToggleOn ? 'ON' : 'OFF'}
+          </button>
+        </div>
       );
     }
 }

@@ -7,15 +7,13 @@ class PlistItem extends React.Component {
     }
 
     render() {
-        const id = this.props.id;
         const value = this.props.value;
+        const index = this.props.index;
+
+        console.log('PlistItem Index=' + index + ', value=' + value);
 
         return(
-            <li key={id}>
-                'id=' {id}
-                ' - '
-                'Value=' {value}
-            </li>
+            <li>{value}</li>
         );
     }
 }
