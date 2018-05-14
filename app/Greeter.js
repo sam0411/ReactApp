@@ -6,6 +6,8 @@ import Popper from './Popper';
 import Plist from './Plist';
 import Pclock from './Pclock';
 import NameForm from './NameForm';
+import BoilingCalculator from './BoilingCalculator';
+
 
 import config from './config.json';
 
@@ -50,6 +52,8 @@ class Greeter extends Component{
         <NameForm />
         <br />
         
+        <BoilingCalculator />
+        <br />
       </div>
     );
   }
