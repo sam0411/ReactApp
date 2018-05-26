@@ -1,12 +1,18 @@
 //Greeter,js
 import React, {Component} from 'react';
 
+import { createStore } from 'redux';
+import { Provider } from 'react-redux';
+
 import Toggle from './Toggle';
 import Popper from './Popper';
 import Plist from './Plist';
 import Pclock from './Pclock';
 import NameForm from './NameForm';
 import BoilingCalculator from './BoilingCalculator';
+
+
+import ToDoListApp from './todos/ToDoListApp';
 
 
 import config from './config.json';
@@ -20,6 +26,10 @@ class Greeter extends Component{
   }
 
   render() {
+
+    //redux store
+    const store = createStore(rootReducer);
+
     const isLoggedIn = this.props.isLoggedIn;
 
     let greeting = null;
@@ -54,6 +64,14 @@ class Greeter extends Component{
         
         <BoilingCalculator />
         <br />
+        <br />
+        <br />
+        <br />
+
+        <Provider store={store}>
+          <ToDoListApp />
+        </Provider>
+
       </div>
     );
   }

@@ -22,10 +22,15 @@ npm install babel-preset-es2015 --save-dev
 npm install babel-plugin-react-transform --save-dev  
 
 
-npm install react --save-dev  
-npm install react-router --save-dev  
-npm install react-dom --save-dev  
-npm install react-redux --save-dev  
+npm install react --save 
+npm install react-router --save 
+npm install react-dom --save 
+
+npm install redux --save  
+npm install react-redux --save 
+npm install redux-devtools --save-dev  
+
+
 npm install react-transform-hmr --save-dev  
   
 
@@ -65,5 +70,11 @@ npm install extract-text-webpack-plugin --save-dev
 <font color=#0099ff>处理文件。诸如图片，字体等等，不过有个神奇的地方它可以根据你的需求将一些图片自动转成base64编码的，为你减轻很多的网络请求</font>  
 npm install url-loader --save-dev  
 npm install file-loader --save-dev  
+
+
+<font color=#0099ff>Handlebars provides the power necessary to let you build semantic templates effectively with no frustration. Support expresion.</font>
+npm install handlebars --save  
+
+
 
 npm install react-addons-css-transition-group
